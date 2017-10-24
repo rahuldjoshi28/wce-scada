@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scada.DetailsController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ToggleButton layoutX="490.0" layoutY="454.0" mnemonicParsing="false" text="ON/OFF" />
+      <Label layoutX="63.0" layoutY="352.0" prefHeight="17.0" prefWidth="80.0" text="Power Factor:" />
+      <Label layoutX="346.0" layoutY="352.0" prefHeight="17.0" prefWidth="80.0" text="Energy (kWh)" />
+      <Label layoutX="33.0" layoutY="95.0" prefHeight="50.0" prefWidth="128.0" styleClass="row-header-cell" text="   Current(Ampere) " />
+      <Label layoutX="33.0" layoutY="145.0" prefHeight="50.0" prefWidth="128.0" styleClass="row-header-cell" text="   Voltage (Volts)" />
+      <Label layoutX="33.0" layoutY="195.0" prefHeight="44.0" prefWidth="128.0" styleClass="row-header-cell" text="   Active Power(kWatt)" />
+      <Label layoutX="195.0" layoutY="352.0" prefHeight="17.0" prefWidth="80.0" />
+      <Label layoutX="490.0" layoutY="352.0" prefHeight="17.0" prefWidth="80.0" />
+      <TableView fx:id="ytable" layoutX="317.0" layoutY="67.0" prefHeight="176.0" prefWidth="156.0">
+         <columns>
+            <TableColumn fx:id="y" prefWidth="154.0" text="Y" />
+         </columns>
+      </TableView>
+      <TableView fx:id="rtable" layoutX="161.0" layoutY="67.0" prefHeight="176.0" prefWidth="156.0">
+         <columns>
+            <TableColumn fx:id="r" prefWidth="154.0" text="R" />
+         </columns>
+      </TableView>
+      <TableView fx:id="btable" layoutX="472.0" layoutY="67.0" prefHeight="176.0" prefWidth="156.0">
+         <columns>
+            <TableColumn fx:id="b" prefWidth="154.0" text="B" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

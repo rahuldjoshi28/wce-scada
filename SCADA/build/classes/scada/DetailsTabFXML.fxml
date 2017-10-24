@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scada.TableDocumentController">
+   <children>
+      <TableView fx:id="ftag1" layoutY="351.0" prefHeight="203.0" prefWidth="194.0">
+        <columns>
+          <TableColumn fx:id="tag1" prefWidth="40.0" text="TAG" />
+          <TableColumn fx:id="discription1" prefWidth="153.0" text="Discription" />
+        </columns>
+      </TableView>
+      
+      <TableView fx:id="ftag2" layoutX="194.0" layoutY="351.0" prefHeight="203.0" prefWidth="194.0">
+         <columns>
+            <TableColumn fx:id="tag2" prefWidth="40.0" text="TAG" />
+            <TableColumn fx:id="discription2" prefWidth="153.0" text="Discription" />
+         </columns>
+      </TableView>
+      
+      <TableView fx:id="ftag3" layoutX="388.0" layoutY="351.0" prefHeight="203.0" prefWidth="194.0">
+         <columns>
+            <TableColumn fx:id="tag3" prefWidth="40.0" text="TAG" />
+            <TableColumn fx:id="discription3" prefWidth="153.0" text="Discription" />
+         </columns>
+      </TableView>
+      
+      <TableView fx:id="ftag4" layoutX="582.0" layoutY="351.0" prefHeight="203.0" prefWidth="194.0">
+         <columns>
+            <TableColumn fx:id="tag4" prefWidth="40.0" text="TAG" />
+            <TableColumn fx:id="discription4" prefWidth="153.0" text="Discription" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
